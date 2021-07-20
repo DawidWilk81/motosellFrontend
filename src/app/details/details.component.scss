@@ -1,0 +1,55 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_variables.scss';
+@import '../../scss/_placeholders.scss';
+
+#container{
+    width:100vw;
+    height:100vh;
+    background-color: #68848488;
+}
+img{
+    @include bodyBuilder(100%,40vh);
+}
+
+h1{
+    @extend %details_h1;
+}
+
+#offerInfo {
+    width:100%; 
+    background-color: rgba(202, 202, 202, 0.815);
+}
+
+tr > td {
+    border:2px solid black;
+    height: 5.56vh;
+
+}
+
+button {
+    width: 50%;
+    height: 15vh;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+
+
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+    &:hover{
+        background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	    background-color:#0061a7;
+    }
+    &:active{
+        position:relative;
+	    top:1px;
+    }
+
+}

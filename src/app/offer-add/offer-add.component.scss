@@ -1,0 +1,38 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/_placeholders.scss";
+@import "../../scss/_mixins.scss";
+
+#container{
+    @extend %container_flex;
+    background-image: url(../../assets/bg-offer-add.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#offerAdd{
+    width:70vw;
+    height: 90vh;
+    background-color: #67676675;
+    border: 1px solid black;
+    @extend %logInRegisterMainBox;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 20;
+    
+}
+form{
+    width:100%;
+}
+form input[type='text'] {
+    width:80%;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+#logo_box{
+    @extend %logInRegister_logoBox;
+    }
+    img{
+       @extend %logInRegister_logoImg;
+    }

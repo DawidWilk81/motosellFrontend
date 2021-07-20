@@ -1,0 +1,101 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_variables.scss';
+@import '../../scss/_placeholders.scss';
+
+#updateOfferContainer{
+    @include bodyBuilder(99vw,100vh);
+
+}
+//div z inputami
+#info{
+@include bodyBuilder(100%,100%);
+background-color: $mainBox_BgColor;
+
+
+}
+//div z buttonami
+#options{
+    @include bodyBuilder(100%, 10%);
+    background-color:yellowgreen;
+}
+
+
+
+#imgContainer{
+    @include bodyBuilder(100%,40vh);
+
+}
+img{
+
+    @include bodyBuilder(100%,40vh);
+
+}
+
+
+h1{
+    @extend %details_h1;
+
+}
+label{
+    display: block;
+    text-align: center;
+    margin-top:5px;
+
+}
+
+
+input {
+    width:80%;
+    height: 10%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button{
+    @include bodyBuilder(50%,100%);
+
+    &:first-child{
+        box-shadow: 0px 10px 14px -7px #3dc21b;
+        background:linear-gradient(to bottom, #44c767 5%, #366b1a 100%);
+        background-color:#44c767;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #33662b;
+        &:hover{
+            background:linear-gradient(to bottom, #366b1a 5%, #44c767 100%);
+            background-color:#366b1a;
+        }
+        &:active{
+            position:relative;
+	        top:1px;
+        }
+    }
+    &:last-child{
+        box-shadow: 0px 10px 14px -7px #732727;
+        background:linear-gradient(to bottom, #cc2d2d 5%, #224c52 100%);
+        background-color:#cc2d2d;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #3d768a;
+        &:hover{
+            background:linear-gradient(to bottom, #224c52 5%, #cc2d2d 100%);
+	        background-color:#224c52;
+        }
+        &:active{
+            position:relative;
+	        top:1px;
+        }
+    }
+}

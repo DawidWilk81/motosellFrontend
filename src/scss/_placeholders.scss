@@ -1,0 +1,84 @@
+
+@import './_variables.scss';
+
+%centerDivs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+%container_flex{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%logInRegister_h2{
+    font-family: serif;
+    color: #0a0a0a;
+    font-size:2rem;
+}
+
+%logInRegister_logoBox{
+    width:20vw;
+    height: 10vh;
+    position: absolute;
+    bottom:5px;
+    left:20px;
+    opacity: 1;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+%logInRegister_logoImg{
+    width:100%;
+    height:100%;
+}
+
+%logInRegisterMainBox{
+    border:1px solid black;
+border-color: #777777;
+-webkit-box-shadow: 5px 5px 17px 2px rgba(0,0,0,0.55); 
+box-shadow: 5px 5px 17px 2px rgba(0,0,0,0.55);
+min-width: 300px;
+}
+%logInRegister_button{
+    cursor: pointer;
+    width:15%;
+    height: 3em;
+    margin: 10px;
+    @media screen and (max-width: 1170px) {}
+}
+
+//User Icon/ info placeholder
+%UserInfoIcon{
+    width:50%;
+    height: 100%;
+    float: left;
+}
+
+%homePage_Li{
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    min-width: 50px;
+
+}
+
+%accountBox{
+    background-color: #0a4268ce;
+    width: 100%;
+    height: 10vh;
+    min-width: 350px;
+
+
+}
+
+//details
+%details_h1{
+    position: absolute;
+    top:30vh;
+    color:white;
+    left:50%;
+}

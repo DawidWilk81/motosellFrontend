@@ -1,0 +1,37 @@
+
+<div id="container">
+    <div id="logo_box" (click) = "home()">
+        <img src = '../../assets/car-logo-white.png' class = 'logo'/>
+    </div>
+    <div id="offerAdd">
+        <h2>Dodaj ofertę sprzedaży</h2>
+
+        <form >
+            
+            <input type='text' placeholder="Tytul" name='Tytul' [(ngModel)]='offer.Tytul' /><br><br>
+            <label><b><i>Kategoria: </i></b><select name="Kategoria" [(ngModel)]='offer.Kategoria'  >
+                <option value="Motocykl" name = "Motocykl" id = "Motocykl">Motocykl</option>
+                <option value="Osobowy" name = "Osobowy" id = "Osobowy">Osobowy</option>
+                <option value="Ciezarowy" name = "Ciezarowy" id = "Ciezarowy">Ciezarowy</option>
+            </select></label><br><br>
+            <label><b><i>Rodzaj Paliwa: </i></b><select name="Rodzaj_Paliwa" [(ngModel)]='offer.Rodzaj_Paliwa' >
+                <option value="Benzyna" name = "Benzyna" id = "Benzyna">Benzyna</option>
+                <option value="Diesel" name = "Diesel" id = "Diesel">Diesel</option>
+                <option value="LPG" name = "LPG" id = "LPG">LPG</option>
+            </select></label><br><hr>
+            
+            <input type='text' placeholder="Marka" name='Marka' [(ngModel)]='offer.Marka' />
+            <input type='text' placeholder="Model" name='Model' [(ngModel)]='offer.Model' /><br>
+
+            <input type='number' placeholder="Rok_produkcji" name='Rok_produkcji' [(ngModel)]='offer.Rok_produkcji' />
+            <input type='number' placeholder="Przebieg" name='Przebieg' [(ngModel)]='offer.Przebieg' />
+            <input type='number' placeholder="Pojemnosc_skokowa" name='Pojemnosc_skokowa' [(ngModel)]='offer.Pojemnosc_skokowa' />
+            <input type='number' placeholder="Moc" name='Moc' [(ngModel)]='offer.Moc' /><br><br>
+            <input type='file'  #fileInput (change)='onFileInput(fileInput.files)' /><br><br>
+
+            <textarea id='Opis' name='Opis' [(ngModel)]='offer.Opis'></textarea><br>
+            <button (click)="pojazdPost()">POST</button>
+        </form>
+    </div>
+</div>
+

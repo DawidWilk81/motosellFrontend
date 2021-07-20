@@ -1,0 +1,14 @@
+<div id="registerContainer">
+    <div id="logo_box" (click)="home()">
+        <img src = '../../assets/car-logo-white.png' class = 'logo'/>
+    </div>
+    <div id="registerBox">
+        <h2>Zarejestruj się</h2>
+        <hr>
+        <form> 
+            <input type="text" placeholder="Login" class = 'registerInput' [(ngModel)]="register.username" name = 'login'/>
+            <input type="password" placeholder="Hasło" class = 'registerInput' [(ngModel)]="register.password" name = 'password'/><br>
+            <button class = 'registerButton' (click)='registerUser()'>Zarejestruj</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div id="loginContainer">
+    <div id="logo_box" (click) = "home()">
+        <img src = '../../assets/car-logo-white.png' class = 'logo'/>
+    </div>
+    <div id="logInBox">
+        <h1>Zaloguj się</h1><hr>
+        <form>
+            <input type = 'text' placeholder="login" class = 'login-input-text' name='login-username' [(ngModel)] = "user.username"/>
+            <input type = 'password' placeholder="haslo" class = 'login-input-text' name='login-password' [(ngModel)] = "user.password"/><br/><br/>
+            <button class = 'logInButton' (click) = "Login()"> Zaloguj</button>
+        </form>
+    </div>
+</div>

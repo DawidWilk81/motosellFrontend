@@ -1,0 +1,48 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/_mixins.scss";
+@import "../../scss/_placeholders.scss";
+
+#registerContainer{
+@include bodyBuilder(100vw,100vh);
+background-image: url("../../assets/bg-register.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+
+opacity: 0.9;
+@extend %centerDivs;
+text-align: center;
+}
+#logo_box{
+@extend %logInRegister_logoBox;
+}
+img{
+   @extend %logInRegister_logoImg;
+}
+#registerBox{
+background-color: $loginRegisterBox_BgColor;
+@include bodyBuilder(40vw, 70vh);
+@extend %logInRegisterMainBox;
+}
+
+.registerInput{
+    @include bodyBuilder(70%, 4vh);
+    margin-top:10px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+.registerButton{
+    @extend %logInRegister_button;
+
+    &:active{
+        position: relative;
+        top:1px;
+    }
+}
+
+h2{
+    @extend %logInRegister_h2;
+}
+

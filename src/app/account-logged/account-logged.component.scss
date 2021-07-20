@@ -1,0 +1,67 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/_placeholders.scss";
+@import "../../scss/_mixins.scss";
+.navMenu{
+    list-style-type: none;
+    width:100%;
+    height: 100%;
+    margin:0;
+    
+    &>li{
+        @include bodyBuilder(33.3%,100%);
+        @extend %homePage_Li;
+        
+        &:first-child{
+            border-left: none;
+        }
+        &:last-child{
+            border-right: none;
+        }
+        &:hover{
+            background-color: #5a5a5a49;
+        }
+    }
+}
+ion-icon {
+    font-size: 3vw;
+  }
+#account_box{
+
+    @extend %accountBox;
+ 
+    
+}
+#logo{
+    width:20%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    
+}
+.logo{
+    width: 100%;
+    height: 90%;
+    margin-top: 2px;
+    
+}
+#acc_menu{ 
+    width:60%;
+    height:100%;
+    float: left;
+}
+
+#user{
+    width:20%;
+    height: 100%;
+    background-color: #555555;
+    float: left;
+    border-left: 2px solid black;
+}
+#userIcon{
+@extend %UserInfoIcon;
+border-right: 2px solid rgb(54, 39, 39);
+}
+#userInfo{
+@extend %UserInfoIcon;
+text-align: center;
+}

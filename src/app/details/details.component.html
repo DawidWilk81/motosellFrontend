@@ -1,0 +1,51 @@
+<div id="container">
+
+
+<img src='{{pojazdy.Zdjecie}}' alt='Zdjecie'/>
+<h1>{{pojazdy.Tytul}}</h1>
+<table id ='offerInfo'>
+
+    <tr>
+    <td>Kategoria</td>
+    <td>{{pojazdy.Kategoria}}</td>
+    </tr>
+
+    <tr>
+    <td>Marka</td>
+    <td>{{pojazdy.Marka}}</td>
+    </tr>
+
+    <tr>
+    <td>Model</td>
+    <td>{{pojazdy.Model}}</td>
+    </tr>
+
+    <tr>
+    <td>Rodzaj paliwa</td>
+    <td>{{pojazdy.Rodzaj_paliwa}}</td>
+    </tr>
+
+    <tr>
+    <td>Rok produkcji</td>
+    <td>{{pojazdy.Rok_produkcji}}</td>
+    </tr>
+
+    <tr>
+    <td>Przebieg</td>
+    <td>{{pojazdy.Przebieg}}</td>
+    </tr>
+
+    <tr>
+    <td>Pojemnosc skokowa</td>
+    <td>{{pojazdy.Pojemnosc_skokowa}}</td>
+    </tr>
+
+    <tr>
+    <td>Moc</td>
+    <td>{{pojazdy.Moc}}</td>
+    </tr>
+
+    </table>
+    <button>Złóż zamówienie</button>
+    <button (click)='back()'>Cofnij</button>
+</div>

@@ -1,0 +1,16 @@
+
+<div id="logobox"><img src='../../assets/car-logo-white.png' alt="Strona główna" (click)='home()'></div>
+
+<div id="userOffersContainer">
+    
+    <div id="userOffersBox">
+        <section class="offers" *ngFor = "let oferty of ofertyGet |filter:user"
+         routerLink='oferty/{{oferty.id}}'
+            style="background-image: url('{{oferty.Zdjecie}}')">
+        
+        <div class="details">
+            <h2>{{oferty.Tytul}}</h2>
+        </div>
+    </section>
+    </div>
+</div>
