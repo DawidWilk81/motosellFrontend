@@ -5,7 +5,8 @@ Po pobraniu kodu w kompilatorze wpisujemy npm -i, a następnie ng serve. Aplikac
 ![nawigacja](https://user-images.githubusercontent.com/38471575/126463466-ee73d250-4f4d-47f3-bcfb-dc9e3f9a5c9f.png)
 
 <h2>Strona główna</h2>
-![Strona_główna](https://user-images.githubusercontent.com/38471575/126463644-803b0426-92e5-4b62-a200-0a01abe28418.png)
+![obraz](https://user-images.githubusercontent.com/38471575/126464851-80256b4a-1d79-4192-aa13-b73c01a121b3.png)
+
 
 <h2>Rejestracja</h2>
 ![obraz](https://user-images.githubusercontent.com/38471575/126463830-b30e3927-1f55-424f-a290-4d2413a640ab.png)
