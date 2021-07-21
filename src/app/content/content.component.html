@@ -2,12 +2,13 @@
     <!-- content box to wewnetrzy wysrodkowany kontener ---->
     <div id="contentBox">
     <!-- offers to kontener ---->
-    <section class="offers" *ngFor = "let pojazd of pojazdy " routerLink='pojazd/{{pojazd.id}}'
-    style="background-image: url('{{pojazd.Zdjecie}}');" (click)='offerClicked(pojazd)'>
+    <div class='offers' *ngFor = "let pojazd of pojazdy " routerLink='pojazd/{{pojazd.id}}'
+     (click)='offerClicked(pojazd)'>
+    <img src='{{pojazd.Zdjecie}}' width="100%" height="100%" />
 
         <div class="details">
             <h2>{{pojazd.Tytul}}</h2>
         </div>
-    </section>
+    </div>
     </div>
 </main>
