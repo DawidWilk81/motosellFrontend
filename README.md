@@ -4,7 +4,7 @@ Po pobraniu kodu Angulara z git'a w kompilatorze wpisujemy npm i, a następnie n
 
 Dokumentacja:
 <h3>Remote Host</h3>
-![RemoteHost](https://user-images.githubusercontent.com/38471575/126477640-0a96f549-4aca-4e36-8c98-ff3700d0ddaa.JPG)
+![RemoteHost](dokumentacja/Home.JPG)
 
 <h3> Rejestracja</h3>
 ![Register](https://user-images.githubusercontent.com/38471575/126477755-22807139-90ab-444c-900b-8491bf08a754.JPG)
