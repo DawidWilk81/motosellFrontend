@@ -19,6 +19,8 @@ home(){
 }
 logoutUser(){
   sessionStorage.removeItem('currentUser');
+  sessionStorage.removeItem('username');
+  
   this.router.navigateByUrl('');
 }
 
