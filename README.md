@@ -1,27 +1,27 @@
 # MotoSell
+Sprawdzenie aplikacja:
+Po pobraniu kodu Angulara z git'a w kompilatorze wpisujemy npm i, a następnie ngserve
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+Dokumentacja:
+<h3>Remote Host</h3>
+![RemoteHost](https://user-images.githubusercontent.com/38471575/126477640-0a96f549-4aca-4e36-8c98-ff3700d0ddaa.JPG)
 
-## Development server
+<h3> Rejestracja</h3>
+![Register](https://user-images.githubusercontent.com/38471575/126477755-22807139-90ab-444c-900b-8491bf08a754.JPG)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<h3> Logowanie</h3>
+![Login](https://user-images.githubusercontent.com/38471575/126477787-ba9be07a-b848-47ac-a7d5-ad278b9d42d1.JPG)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3> Strona główna</h3>
+![Home](https://user-images.githubusercontent.com/38471575/126477825-e7668028-363f-4b4e-8a24-9242a4d9e987.JPG)
 
-## Build
+<h3> Strona główna po zalogowaniu </h3>
+![strona_zalogowany](https://user-images.githubusercontent.com/38471575/126477848-49830aae-9345-4ba2-9ebc-f256887af92f.JPG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h3> Dodawanie oferty</h3>
+![offerAdd](https://user-images.githubusercontent.com/38471575/126477884-c61eb64d-0c7b-4a0e-93ce-8e7a4c90ea5b.JPG)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h3> Oferty użytkownika</h3>
+![myOffer](https://user-images.githubusercontent.com/38471575/126477889-acd0bf48-add2-4f20-9559-ca03e8bbaeac.JPG)
