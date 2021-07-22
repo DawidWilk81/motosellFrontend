@@ -1,28 +1,27 @@
 # MotoSell
-Sprawdzenie aplikacja:
-Po pobraniu kodu Angulara z git'a w kompilatorze wpisujemy npm i, a następnie ngserve
 
-Dokumentacja:
-<h3>Remote Host</h3>
-<img src='dokumentacja/RemoteHost.JPG'/>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
-<h3> Rejestracja</h3>
+## Development server
 
-<img src='dokumentacja/Register.JPG'/>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-<h3> Logowanie</h3>
-<img src='dokumentacja/Login.JPG'/>
+## Code scaffolding
 
-<h3> Strona główna</h3>
-<img src='dokumentacja/Home.JPG'/>
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-<h3> Strona główna po zalogowaniu </h3>
+## Build
 
-<img src='dokumentacja/strona_zalogowany.JPG'/>
-<h3> Dodawanie oferty</h3>
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-<img src='dokumentacja/offerAdd.JPG'/>
+## Running unit tests
 
-<h3> Oferty użytkownika</h3>
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-<img src='dokumentacja/myOffer.JPG'/>
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
