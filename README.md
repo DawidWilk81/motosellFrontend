@@ -27,4 +27,5 @@
 <h2>Aktualizowanie oferty</h2>
 <img src='dokumentacja/offerUpdate.JPG'/>
 
-
+<h2>Jak sprawdzić</h2>
+otworzyć w kompilatorze i w terminalu napisac "npm i", a następnie ng serve. 
