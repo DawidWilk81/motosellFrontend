@@ -36,7 +36,8 @@
     cursor: pointer;
     float: left;
     &:hover{
-        border:10px;
+        position: relative;
+        top:5px;
     }
 }
 
@@ -46,7 +47,7 @@
     height: 100%;
     z-index: 1;
     background: rgb(71,71,71);
-    background: linear-gradient(0deg, rgba(71,71,71,1) 0%, rgba(0,255,179,0) 100%);
+    background: linear-gradient(0deg, rgba(71, 71, 71, 0.849) 0%, rgba(0,255,179,0) 100%);
 }
 .details > h2{
     text-align: center;
