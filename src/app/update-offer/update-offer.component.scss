@@ -1,40 +1,61 @@
 @import '../../scss/_mixins.scss';
+@import '../../scss/_media.scss';
 @import '../../scss/_variables.scss';
 @import '../../scss/_placeholders.scss';
 
 #updateOfferContainer{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     @include bodyBuilder(99vw,100vh);
-
+    @include desktop{
+        @include bodyBuilder(99vw,220vh);
+    }
+    @include tablet{
+        @include bodyBuilder(99vw,220vh);
+    }
+    @include mobile{
+        float:none;
+        @include bodyBuilder(100%,220vh);
+    }
+    text-align: center;
+    background-image: url('../../assets/dark-honeycomb.png');
 }
 //div z inputami
 #info{
 @include bodyBuilder(100%,100%);
 background-color: $mainBox_BgColor;
-
-
+@include desktop{
+    @include bodyBuilder(60vw,150vh);
 }
-//div z buttonami
-#options{
-    @include bodyBuilder(100%, 10%);
-    background-color:yellowgreen;
 }
 
 
 
 #imgContainer{
-    @include bodyBuilder(100%,40vh);
+    @include bodyBuilder(40%,100vh);
+    float:left;
+    @include tablet{
+        float:none;
+        @include bodyBuilder(100%,100vh);
+    }
+    @include mobile{
+        float:none;
+        @include bodyBuilder(100%,100vh);
+    }
 
 }
 img{
 
-    @include bodyBuilder(100%,40vh);
+    @include bodyBuilder(100%,60vh);
+    margin-top: 5%;
+    border-radius:20px;
 
 }
 
 
-h1{
-    @extend %details_h1;
-
+h2{
+    text-align: center;
+    color:white;
 }
 label{
     display: block;
@@ -46,9 +67,63 @@ label{
 
 input {
     width:80%;
-    height: 10%;
+    height: 2.5em;
     border-radius: 20px;
     text-align: center;
+    transition: 0.2s;
+    @include tablet{
+        height: 1.5em;
+    }
+    @include mobile{
+        height: 1.5em;
+    }
+    &:focus{
+        border:darkblue;
+        width: 85%;
+    }
+}
+textarea{
+    overflow-y: auto;
+    width:80%;
+    height:20vh;
+    max-width: 90%;
+    max-height: 25vh;
+    @include desktop{
+        max-width: 90%;
+        max-height: 90vh;
+    }
+    @include mobile{
+        max-width: 90%;
+        max-height: 20vh;
+    }
+    @include tablet{
+        max-width: 90%;
+        max-height: 20vh;
+    }
+}
+#offerDetails{
+    width: 60%;
+    height: 95vh;
+    float:left;
+    @include tablet{
+        @include bodyBuilder(100%,120vh);
+    }
+    @include mobile{
+        float:none;
+        @include bodyBuilder(100%,120vh);
+    }
+}
+
+//div z buttonami
+#options{
+    @include bodyBuilder(100%, 5%);
+    @include tablet{
+        @include bodyBuilder(100%,5%);
+    }
+    @include desktop{
+        @include bodyBuilder(100%,7%);
+    }
+    background-color:yellowgreen;
 }
 
 button{

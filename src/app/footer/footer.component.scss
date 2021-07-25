@@ -1,8 +1,18 @@
 @import '../../scss/_mixins.scss';
 @import '../../scss/_variables.scss';
+@import '../../scss/_media.scss';
 #footer{
     @include bodyBuilder(100%, 3.5vh);
     background-color: $footerBg;
     text-align: center;
+    @include desktop{
+        height: 18vh;
+    }
+    @include tablet{
+        height: 18vh;
+    }
+    @include mobile{
+        height: 21vh;
+    }
     
 }

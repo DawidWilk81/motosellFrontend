@@ -1,53 +1,56 @@
 <div id="container">
 
+<br>
+    <img src='{{pojazdy.Zdjecie}}' alt='Zdjecie'/>
+    <h1>{{pojazdy.Tytul}}</h1>
+    <table id ='offerInfo'>
+    
+        <tr>
+        <td>Kategoria</td>
+        <td>{{pojazdy.Kategoria}}</td>
+        </tr>
+    
+        <tr>
+        <td>Marka</td>
+        <td>{{pojazdy.Marka}}</td>
+        </tr>
+    
+        <tr>
+        <td>Model</td>
+        <td>{{pojazdy.Model}}</td>
+        </tr>
+    
+        <tr>
+        <td>Rodzaj paliwa</td>
+        <td>{{pojazdy.Rodzaj_paliwa}}</td>
+        </tr>
+    
+        <tr>
+        <td>Rok produkcji</td>
+        <td>{{pojazdy.Rok_produkcji}}</td>
+        </tr>
+    
+        <tr>
+        <td>Przebieg</td>
+        <td>{{pojazdy.Przebieg}}</td>
+        </tr>
+    
+        <tr>
+        <td>Pojemnosc skokowa</td>
+        <td>{{pojazdy.Pojemnosc_skokowa}}</td>
+        </tr>
+    
+        <tr>
+        <td>Moc</td>
+        <td>{{pojazdy.Moc}}</td>
+        </tr>
 
-<img src='{{pojazdy.Zdjecie}}' alt='Zdjecie'/>
-<h1>{{pojazdy.Tytul}}</h1>
-<table id ='offerInfo'>
-
-    <tr>
-    <td>Kategoria</td>
-    <td>{{pojazdy.Kategoria}}</td>
-    </tr>
-
-    <tr>
-    <td>Marka</td>
-    <td>{{pojazdy.Marka}}</td>
-    </tr>
-
-    <tr>
-    <td>Model</td>
-    <td>{{pojazdy.Model}}</td>
-    </tr>
-
-    <tr>
-    <td>Rodzaj paliwa</td>
-    <td>{{pojazdy.Rodzaj_paliwa}}</td>
-    </tr>
-
-    <tr>
-    <td>Rok produkcji</td>
-    <td>{{pojazdy.Rok_produkcji}}</td>
-    </tr>
-
-    <tr>
-    <td>Przebieg</td>
-    <td>{{pojazdy.Przebieg}}</td>
-    </tr>
-
-    <tr>
-    <td>Pojemnosc skokowa</td>
-    <td>{{pojazdy.Pojemnosc_skokowa}}</td>
-    </tr>
-
-    <tr>
-    <td>Moc</td>
-    <td>{{pojazdy.Moc}}</td>
-    </tr>
-    <tr><h3>Opis</h3>
-        {{pojazdy.Opis}}</tr>
-    </table>
-
-    <button>Złóż zamówienie</button>
-    <button (click)='back()'>Cofnij</button>
-</div>
+        </table>
+        <div id="opis">
+            {{pojazdy.Opis}}
+        </div>
+        <div id="options">
+            <button>Złóż zamówienie</button>
+            <button (click)='back()'>Cofnij</button>
+        </div>
+    </div>

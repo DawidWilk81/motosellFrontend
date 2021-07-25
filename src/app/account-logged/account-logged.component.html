@@ -1,20 +1,23 @@
 
 <div id="account_box">
     <!--Logo MotoSell-->
-    <div id="logo" (click) = "home()"> <img src = '../../assets/car-logo.png' class = 'logo'/></div>
-        <!--Menu moje oferty kontener-->
+    <div id="logo" (click) = "home()"> <img src = '../../assets/car-logo-white.png' class = 'logo'/></div>
+
+
     <div id="acc_menu">
+        <div id="user">
+            <div id="userIcon"><img class='userImg' src='../../assets/unknown.png'/></div>
+            <div id="userInfo"><p> Witaj:{{userUsername}}</p></div>
+            
+        </div>
         <!--Menu moje oferty dodaj oferte itp-->
         <ul class ='navMenu'>
-            <li (click)='myOffers()'>Moje Oferty</li>
-            <li (click)='addOffer()'>Dodaj ofertę</li>
-            <li (click)='logoutUser()'>Wyloguj</li>
+            
+            <li (click)='myOffers()'><br><span class='icons'><i class="fas fa-car"></i></span><br>Moje oferty</li>
+            <li (click)='addOffer()'><br><span class='icons'><i class="fas fa-plus-circle"></i></span><br>Dodaj ofertę</li>
+            <li (click)='logoutUser()'><br><span class='icons'><i class="fas fa-power-off"></i></span><br>Wyloguj</li>
         </ul>
         <!--informacje o zalogowanym uzytkowniku-->
     </div>
-    <div id="user">
-        <div id="userIcon"></div>
-        <div id="userInfo"><p> Witaj:{{userUsername}}</p></div>
-        
-    </div>
+
 </div>

@@ -1,24 +1,44 @@
 @import '../../scss/_mixins.scss';
 @import '../../scss/_variables.scss';
 @import '../../scss/_placeholders.scss';
-
+@import '../../scss/_media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 #container{
-    width:99vw;
-    height:100vh;
-    background-color: #68848488;
+    color:rgb(230, 230, 230);
+    font-size:25px;
+    width:100vw;
+    height:150vh;
+    background-image: url('../../assets/dark-paths.png');
+    @include mobile{
+       height: 220vh;
+    }
 }
 img{
-    @include bodyBuilder(100%,40vh);
+    @include bodyBuilder(40%,66.5vh);
+    float: left;
+    @include mobile{
+        width: 90%;
+        margin-left:5% ;
+    }
 }
 
 h1{
     @extend %details_h1;
+    color:white;
 }
 
 #offerInfo {
-    width:90%; 
+    font-family:'Alice', serif;;
+    
+    width:60%;
+    float: left; 
     margin:auto auto;
-    background-color: rgba(202, 202, 202, 0.815);
+    background-color: rgba(175, 175, 175, 0.575);
+    text-align: center;
+    @include mobile{
+        width: 90%;
+        margin-left:5% ;
+    }
 }
 
 tr > td {
@@ -31,22 +51,16 @@ tr:last-child{
     width:90%;
     border:2px solid black;
 }
-#opis{
-    width:100%;
-    height:1em;
-}
+
 h3 {
     text-align: center;
 }
 button {
-    width: 50%;
-    height: 15vh;
+    float: left;
+    @include bodyBuilder(49.9%, 100%);
     box-shadow:inset 0px 1px 0px 0px #54a3f7;
 	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
 	background-color:#007dc1;
-
-
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -55,6 +69,7 @@ button {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
+    min-height: 250px;
     &:hover{
         background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	    background-color:#0061a7;
@@ -64,4 +79,21 @@ button {
 	    top:1px;
     }
 
+}
+
+//ver Beta
+#options{
+    clear: both;
+    @include bodyBuilder(100%, 30vh);
+}
+#opis{
+    font-size:20px;
+    color:white;
+    clear: both;
+    width: (96%);
+    height: 60vh;
+    border:2px solid black;
+    background-color: rgba(126, 126, 126, 0.411);
+    overflow-y:auto;
+    padding: 20px;
 }

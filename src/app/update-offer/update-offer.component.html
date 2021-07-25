@@ -1,46 +1,46 @@
 <div id="updateOfferContainer">
     
-<div id="imgContainer">
-    <img src='{{selectedPojazd.Zdjecie}}' alt='{{selectedPojazd.Tytul}}'/>
-    <h1>{{selectedPojazd.Tytul}}</h1>
+    <div id="imgContainer">
+        <img src='{{selectedPojazd.Zdjecie}}' alt='{{selectedPojazd.Tytul}}'/>
+        <h2><p><b>Opis</b></p></h2>
+        <textarea [(ngModel)]='selectedPojazd.Opis'></textarea><br>
+    </div>
+
+    <div id="offerDetails">
+        <div id="info">
+            <br>
+        <b><p>Tytul</p></b>
+            <input type='text' [(ngModel)]='selectedPojazd.Tytul'>
+        <br>
+        <p><b>Kategoria:</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Kategoria'><br>
+        
+        <b><p>Marka</p></b>
+            <input type='text' [(ngModel)]='selectedPojazd.Marka'><br>
+        
+        <p><b>Model</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Model'><br>
+        
+        <p><b>Rok produkcji</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Rok_produkcji'><br>
     
-</div>
-
-<div id="info">
-    <br>
-<label> <b><p>Tytul</p></b>
-    <input type='text' [(ngModel)]='selectedPojazd.Tytul'>
-</label><br>
-<label> <p><b>Kategoria:</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Kategoria'><br>
-</label>
-<label><b><p>Marka</p></b>
-    <input type='text' [(ngModel)]='selectedPojazd.Marka'><br>
-</label>
-<label><p><b>Model</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Model'><br>
-</label>
-<label><p><b>Rok produkcji</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Rok_produkcji'><br>
-</label>
-<label><p><b>Przebieg</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Przebieg'><br>
-</label>
-<label><p><b>Pojemnosc skokowa</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Pojemnosc_skokowa'><br>
-</label>
-<label><p><b>Moc</b></p>
-    <input type='text' [(ngModel)]='selectedPojazd.Moc'><br>
-</label>
-<label><p><b>Opis</b></p>
-    <textarea [(ngModel)]='selectedPojazd.Opis'></textarea><br>
-</label>
-
-</div>
-
-<div id="options">
-<button (click)='updatePojazd()'>Update</button>
-<button (click)='back()'>Cofnij</button>
-</div>
-
-</div>
+        <p><b>Przebieg</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Przebieg'><br>
+        
+        <p><b>Pojemnosc skokowa</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Pojemnosc_skokowa'><br>
+        
+        <p><b>Moc</b></p>
+            <input type='text' [(ngModel)]='selectedPojazd.Moc'><br>
+        
+       
+        
+        
+        </div>
+    
+        <div id="options">
+        <button (click)='updatePojazd()'>Update</button>
+        <button (click)='back()'>Cofnij</button>
+        </div>
+    </div>
+    </div>

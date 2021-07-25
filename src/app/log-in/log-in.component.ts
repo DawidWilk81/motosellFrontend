@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './../user.service';
-import {Router, RouterModule} from '@angular/router';
-import { LowerCasePipe } from '@angular/common';
+import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',

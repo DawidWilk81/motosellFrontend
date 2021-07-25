@@ -1,7 +1,4 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-import { Observable } from 'rxjs';
 import { PojazdyService } from '../pojazdy.service';
 
 @Component({
@@ -11,11 +8,14 @@ import { PojazdyService } from '../pojazdy.service';
   providers: [PojazdyService]
 })
 export class ContentComponent implements OnInit {
+  totalRecords:any;
+  page:number = 1;
 
+  wybranyPojazd:any;
   pojazdy:any = [
     {Tytul: 'mazda'}
   ];
-wybranyPojazd:any;
+
   ngOnInit(): void {
     
   }
@@ -44,6 +44,8 @@ wybranyPojazd:any;
         this.pService.wszystkiePojazdy().subscribe(
           data =>{
             this.pojazdy = data;
+            this.totalRecords = data.length;
+            console.log(this.totalRecords);
           },error=>{console.log('error',error)}
         )
     };
@@ -53,6 +55,7 @@ wybranyPojazd:any;
       this.pService.PojazdClicked(pojazd.id).subscribe(
         data =>{
           this.wybranyPojazd = data;
+          
           console.log(this.wybranyPojazd);
         },error=>{console.log('error',error)}
       )

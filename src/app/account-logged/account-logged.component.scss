@@ -1,16 +1,36 @@
 @import "../../scss/_variables.scss";
 @import "../../scss/_placeholders.scss";
 @import "../../scss/_mixins.scss";
+@import "../../scss/_media.scss";
+
+#account_box{
+
+    @extend %accountBox;
+    float:left;
+    @include desktop{
+        float:none;
+        @include bodyBuilder(100%,20vh);
+    }    
+    @include tablet{
+        float:none;
+        @include bodyBuilder(100%,20vh);
+    }    
+    @include mobile{
+        float:none;
+        @include bodyBuilder(100%,20vh);
+    }
+    
+}
+
 .navMenu{
-    list-style-type: none;
-    width:100%;
-    height: 100%;
-    margin:0;
+
+    @extend %navMenu;
     
     &>li{
-        @include bodyBuilder(33.3%,100%);
+        @include bodyBuilder(100%,20%);
         @extend %homePage_Li;
-        
+        color:white;
+        font-size:30px;
         &:first-child{
             border-left: none;
         }
@@ -18,50 +38,134 @@
             border-right: none;
         }
         &:hover{
-            background-color: #5a5a5a49;
+            background-color: #3d3d3d9a;
+            border-top: 4px inset#6868689a;
+            border-bottom: 4px inset#504f4fce;
+            
+        }
+        @include desktop{
+            margin-top:0;
+            @include bodyBuilder(20%,59%);
+            float: left;
+        }        
+        @include tablet{
+            margin-top:0;
+            @include bodyBuilder(20%,80%);
+            float: left;
+            font-size:20px;
+        }        
+        @include mobile{
+            margin-top:0;
+            @include bodyBuilder(20%,85%);
+            float: left;
+            font-size:20px;
         }
     }
 }
-ion-icon {
-    font-size: 3vw;
-  }
-#account_box{
 
-    @extend %accountBox;
- 
-    
-}
 #logo{
-    width:20%;
-    height: 100%;
-    float: left;
-    cursor: pointer;
-    
+@extend %logo;
+@include desktop{
+    position: fixed;
+    bottom:20px;
+    right: 0;
+    @include bodyBuilder(20%,15%);
+}
+@include tablet{
+    position: fixed;
+    bottom:20px;
+    right: 0;
+    @include bodyBuilder(20%,15%);
+}
+@include mobile{
+    position: fixed;
+    bottom:20px;
+    right: 0;
+    @include bodyBuilder(20%,15%);
+}
+
 }
 .logo{
+
     width: 100%;
     height: 90%;
     margin-top: 2px;
+
     
 }
 #acc_menu{ 
-    width:60%;
+    width:100%;
     height:100%;
     float: left;
+    @include desktop{
+        background-color: #686868a1;
+        width:100%;
+        height:100%;
+    }
+    @include tablet{
+        background-color: #686868a1;
+        width:100%;
+        height:100%;
+    }
+    @include mobile{
+        background-color: #686868a1;
+        width:100%;
+        height:100%;
+    }
 }
 
 #user{
-    width:20%;
-    height: 100%;
-    background-color: #555555;
-    float: left;
-    border-left: 2px solid black;
+    width:90%;
+    height: 40%;
+    margin:0 auto;
+    @include desktop{
+        float:left;
+        @include bodyBuilder(20%,90%);
+    }
+    @include tablet{
+        float:left;
+        @include bodyBuilder(20%,90%);
+    }    @include mobile{
+        float:left;
+        @include bodyBuilder(20%,90%);
+    }
 }
 #userIcon{
-@extend %UserInfoIcon;
-border-right: 2px solid rgb(54, 39, 39);
+    @include bodyBuilder(60%,80%);
+    border:1px solid black;
+    margin:10px auto;
+    @include desktop{
+        @include bodyBuilder(60%,70%);
+    }
+    @include tablet{
+        @include bodyBuilder(60%,70%);
+    }    
+    @include mobile{
+        @include bodyBuilder(60%,70%);
+    }
+}
+.userImg{
+    width:100%;
+    height: 100%;
+
 }
 #userInfo{
-@extend %UserInfoIcon;
+@include bodyBuilder(100%,20%);
 text-align: center;
+font-size:18px;
+
+}
+
+//icons font awesome
+.icons{
+    font-size:90px;
+    margin-top: 10%;
+        @include desktop{
+            font-size:30px;
+        }        @include tablet{
+            font-size:30px;
+        }        @include mobile{
+            font-size:20px;
+        }
+    
 }

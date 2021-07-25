@@ -8,6 +8,7 @@
     background-image: url("../../assets/bg-login.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+   
 
     @extend %centerDivs;
 }
@@ -34,11 +35,26 @@
     border-radius: 25px;
     text-align: center;
     font-size: 1em;
+    transition: 0.3s;
+    &:focus{
+        @include bodyBuilder(80%, 4.5vh);
+        border-color: #0004ffa2;
+    }
+    
 }
 
 .logInButton{
 @extend %logInRegister_button;
+&:hover {
+    background:linear-gradient(to bottom, #ed4f49 5%, #99100e 100%);
+    background-color:#ed4f49;
+}
+&:active {
+    position:relative;
+    top:1px;
+
+}
 }
 h1{
-   @extend %logInRegister_h2;
+   @extend %logInRegister_h1;
 }

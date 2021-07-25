@@ -22,12 +22,11 @@
 #logobox{
    
         @extend %logInRegister_logoBox;
-        position: absolute;
-        bottom:10vh;
-        left:80vw;
         z-index:3;
 }
-
+#logobox > img {
+    @include bodyBuilder(100%,100%);
+}
 
 .offers{
     @include bodyBuilder(30%, 25%);

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { Routes, Router } from '@angular/router';
+import { HttpHeaders } from '@angular/common/http'
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

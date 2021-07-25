@@ -1,25 +1,22 @@
-@import './_variables.scss';
 
-@mixin phone {
-    @media (max-width: $tabletWidth -1px){
+@mixin tablet(){
+    @media (max-width: 768px) and (min-width:361px){
         @content;
-    }
-}
+    };
+};
+@mixin desktop(){
+    @media (max-width: 1380px) and (min-width:769px)  {
+        @content;
+    };
+};
+@mixin LGdesktop(){
+    @media screen  and (min-width:1381px) {
+        @content;
+    };
+};
 
-@mixin tablet {
-    @media (min-width:$tabletWidth) and (max-width: $desktopWidth -1px){
+@mixin mobile(){
+    @media screen and(max-width: 390px) and (min-width:0) {
         @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width:$desktopWidth) and (max-width: $largeDesktopWidth -1px){
-        @content;
-    }
-}
-
-@mixin LGdesktop {
-    @media (min-width:$largeDesktopWidth) {
-        @content;
-    }
-}
+    };
+};
